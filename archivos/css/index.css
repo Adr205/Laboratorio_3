@@ -2,6 +2,95 @@
   box-sizing: border-box;
 }
 
+
+header{
+  text-align: center;
+}
+.hamburger{
+  background-color: #777;
+  color: white;
+  text-align: end;
+}
+
+@media(max-width: 1024px) {
+  .menu{
+    display: none;
+  }
+}
+
+main{
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.product{
+  border: 1px solid black;
+}
+
+ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-decoration: none;
+}
+
+li{
+  list-style-type: none;
+}
+
+
+
+@media(min-width: 768px ) {
+  header{
+    display:flex;
+    justify-content:center;
+    column-gap: 5rem;
+  }
+}
+
+@media(min-width: 1025px) {
+  .hamburger{
+    display: none;
+  }
+  header{
+    margin-top: 2rem;
+  }
+  .menu{
+    background-color: #777;
+    justify-content: end;
+    column-gap: 4rem;
+    height: 3rem;
+    color: white;
+    padding-top: .9rem;
+  }
+  li:last-child{
+    margin-right: 1rem;
+  }
+
+  main{
+    flex-direction: row;
+  }
+
+  .product{
+    margin-left: 3rem;
+    border-color: #ddd;
+  }
+
+  .product:last-child{
+    margin-right: 2rem;
+  }
+
+  footer{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-top: 1px solid #ddd;
+  }
+
+}
+
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
